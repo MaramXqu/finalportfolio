@@ -1,0 +1,838 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Eczar", serif;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    cursor: url(./Assets/Empire\ logo\ black.svg), auto;
+}
+a{
+    cursor: pointer;
+}
+body {
+    
+    margin: 0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 1rem 5% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;  
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+#headerimg{
+    width: 100%;
+    height: 600px;
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.button-top{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    color: #3B3F42;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #333;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background-color, color;
+    z-index: 9999; 
+}
+.button-top:hover, .button-top:focus{
+    background-color: #72271E;
+    color: #dee0e0;
+}
+
+
+#logo{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar a{
+font-size: 1.5rem;
+text-decoration: none;
+font-weight: 700;
+margin-left: 5rem;
+}
+
+#check{
+    display: none;
+}
+
+.Menu-iphone{
+    position: absolute;
+    right: 5%;
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+#closicon{
+   display: none;
+} 
+hr{
+    width: 95%;
+    color: black;
+    margin-left: 5rem;
+}
+
+.mainSection{
+    height: 90vh;
+    background-image: url("Assets/Empire-header.svg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:baseline;
+    width: 100%;
+    margin-top: 9rem;
+    padding: 4rem;
+    color: black;
+    
+    
+}
+.design-process{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    
+}
+.design-process h3{
+    margin-right: 2rem;
+}
+.design-process-1{
+    background-color: #72271E;
+    height:fit-content;
+    padding: 12rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: url(./Assets/Empire\ logo\ weight.svg), auto;
+
+}
+.design-process-1 h2{
+    text-transform: uppercase;
+    animation: glow 2s ease-in-out infinite alternate;
+    font-size: 8rem;
+    color: #F3EFEE;;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 20px  #818282;
+    }
+    to {
+      text-shadow: 0 0 30px #fbfcfc 0 0 10px #dee0e0;
+    }
+  }
+  #quan-qal-research{
+    background-color: #72271E;
+    cursor: url(./Assets/Empire\ logo\ weight.svg), auto;
+    height: fit-content; 
+    color:#F3EFEE;
+  }
+
+  .design-process-stage{
+    height: 30vh;
+    width: 18%;
+    border-radius: 100%;  
+    color: black;
+    font-size: 2.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem 40%;
+  }
+
+.mainSection .left-section ,.mainSection .right-section{
+
+    text-align: center;
+}
+
+.mainSection .right-section h1{
+    font-size: 6rem;
+}
+
+.left-section img{
+    animation:floatImage 4s ease-in-out infinite;
+    width: 150px;
+    height: 150px;
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 0 0;
+
+}
+.social-footer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.social a:hover{
+    background-color: #FDFABE;
+    border-color: #FDFABE;
+    box-shadow: 0 0 1rem #FDFABE;
+}
+.container{
+    padding: 5rem;
+    height: fit-content;
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(20px);
+
+} 
+.phone-img{
+    width:170px;
+     height:360px;
+}
+
+.problem-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  padding-left: 1rem;
+  margin: 3rem 0;
+
+}
+#seeprototype{
+    margin-top: 3rem;
+    padding: 1.2rem;
+    background-color: #72271E;
+    cursor: url(./Assets/Empire\ logo\ weight.svg), auto;
+    color: #fff;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 0.5rem #8a8a89;
+    cursor: pointer;
+}
+#persona-container{
+    height: 290vh;
+}
+#wireframe-container{
+    height:fit-content;
+}
+.problem-section p{
+    font-size: 1.6rem;
+}
+.problem-section span{
+    color: rgb(70, 9, 92);
+    font-weight: 700;
+}
+
+
+.photo-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  margin: 3rem 0;
+}
+
+.photo-container img{
+    width: 950px;
+    height: 660px;
+}
+ p {
+    font-size: 1.8rem;
+}
+h3{
+    font-size: 2.4rem;
+    margin-top: 1.2rem;
+}
+
+.Callenge{
+    width: 70%;
+
+}
+
+.problem-section .challenge-info ul{
+    list-style: none;
+
+}
+.problem-section .challenge-info ul img{
+    padding-top: 10px;
+}
+.problem-section .challenge-info ul li{
+    font-size: 1.7rem;
+
+}
+
+
+.problem-section .challenge-info{
+    font-size: 1rem;
+    width: 70%;
+    margin-top: 1rem;
+
+}
+
+.process{
+    margin: 3rem 0;
+ 
+  margin-left: 4rem;
+  
+
+}
+.Problem-statment{
+    margin: 9rem 0;
+    width: 100%;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: white;
+  text-align: center;
+  background-color:#0D364A; 
+  cursor: url(./Assets/Empire\ logo\ weight.svg), auto;
+  
+}
+.Problem-statment span{
+    color: rgb(209, 130, 12);
+}
+.Problem-statment h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+.Problem-statment h4{
+    font-size: 2rem;
+    font-weight: 200;
+
+}
+.challenge-info img{
+    margin-right: 2rem;
+}
+
+ .img-conta{
+display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer p{
+    font-size: 1.6rem;
+    color: rgba(28, 27, 27, 0.715);
+}
+.prototype{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     align-items: center;
+     margin-top: 2rem;
+}
+
+.prototype iframe{
+    border: 0px solid rgba(246, 244, 244, 0.1);
+    width:400px;
+     height:800px;
+     margin-top: 1rem;
+}
+
+hr{
+    margin-left: 15%;
+    width: 80%;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+.latest-project-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    height: 90vh;
+    background-color:#F5F2F0;
+}
+.latest-project{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 3rem;
+  width: 400px;
+
+
+    
+}
+.latest-project-cont h2{
+    font-size: 3rem;
+    margin: -3rem 2rem;
+}
+.project-card{
+   flex: 1 1 21rem;
+   margin: 20px 20px;
+   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+   flex-wrap: wrap;
+   align-self: normal;
+   display: flex;
+   flex-direction: column;
+   padding: 20px 30px;
+   width: 200px;
+
+}
+.project-card img{
+    width: 100%;
+    height: 200px;
+}
+.project-card:hover{
+    box-shadow: 0 4px 30px rgba(239, 236, 233, 0.331);
+}
+
+.project-card h4{
+    font-size: 28px;
+   margin: 15px 0;
+
+}
+.project-card p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+.project-card button{
+    background-color: #72271E;
+    color: #ededeb;
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: auto;
+}
+.project-card a:visited, .project-card a:link{
+    color:white;
+}
+a:visited, a:link{
+    color:#333;
+}
+
+
+
+
+@media (max-width:1024px)and (min-width:676px){
+    .header{
+        padding: 1.3rem 5%;
+
+    }
+    .container p{
+        font-size: 2rem;
+    }
+    .mainSection{
+        height: 40vh;
+        margin-top: 10rem;
+        padding-top: 10rem;
+
+        
+    }
+    .mainSection .left-section img{
+        width: 200px;
+        height: 110px;
+
+    }
+    .mainSection .right-section{
+        text-align: center;
+        
+    }
+    .mainSection .right-section h1{
+        font-size: 3.2rem;
+    }
+    .social a{
+        margin: 2rem 1rem 0 0;
+    }
+    .container{
+        height: fit-content;
+        padding: 4rem 7rem;
+    }
+    .design-process-1{
+        height: fit-content;
+    }
+    .problem-section{
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    .Callenge{
+        padding-left: 0;
+        width: 100%;
+    }
+    .problem-section .challenge-info{
+        direction: ltr;
+        width: 100%;
+    }
+    .process {
+        margin-left: 0;
+    }
+    .photo-container {
+    
+        flex-direction: column;
+        padding-left:0;
+    }
+    .photo-container img{
+        width: 600px;
+        height: 500px;
+    }
+    .phone-img{
+        width:150px;
+         height:340px;
+    }
+    .photo-container .img-conta{
+        display: flex;
+        justify-content: center;
+    }
+    .photo-container .img-conta img{
+        width: 640px;
+        height: 500px;
+    }
+    
+    .prototype iframe{
+        border: 0px solid rgba(246, 244, 244, 0.1);
+        width:300px;
+         height:660px;
+    }
+    hr{
+        
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .design-process-1 h2{
+        font-size: 6rem;
+    }
+    .design-process-stage{
+        height: 30vh;
+        width: 30%;
+        font-size: 2rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 12rem 35%;
+      }
+      #quan-qal-research{
+        height: 97vh;
+        align-items: center;
+        height: fit-content;
+      }
+      .prototype iframe{
+        border: 0px solid rgba(246, 244, 244, 0.1);
+        width:300px;
+         height:700px;
+         margin-top: 1rem;
+    }
+    #persona-container{
+        height: fit-content;
+    }
+    #wireframe-container{
+        height: fit-content;
+    }
+    #test-container{
+        height: fit-content;
+    }
+    .latest-project{
+        width: 400px;
+    }
+    .button-top{
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+    
+
+    
+}
+
+@media (max-width:675px){
+    .header{
+        width: 100%;
+    }
+    .Menu-iphone{
+        display: inline-flex;
+    }
+    #check:checked~.Menu-iphone #menuIcon {
+        display: none;
+    }
+
+    #check:checked~.Menu-iphone #closicon {
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(50px);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~.navbar {
+        height: 10.7rem;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        color:#0a0a0a;
+    }
+    .mainSection{
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 10rem;
+        padding: 10rem 1rem;
+        
+    
+    }
+    .container {
+        
+        padding: 2rem;
+        height: fit-content;
+
+    }
+    .problem-section p {
+        font-size: 1.4rem;
+    }
+   
+    .problem-section{
+        flex-direction: column;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    .Callenge{
+        padding-left: 0;
+        width: 100%;
+    }
+    .problem-section .challenge-info{
+        direction: ltr;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .process {
+        margin-left: 0;
+    }
+    .photo-container {
+    
+        display: flex;
+        flex-direction: column;
+        padding-left:0;
+    }
+    .photo-container img{
+        width: 300px;
+        height: 250px;
+    }
+    .mainSection .left-section ,.mainSection .right-section{
+        margin-right: 0;
+    }
+    .mainSection .left-section img{
+        width: 115px;
+        height: 100px;
+
+    }
+    .mainSection .right-section{
+        text-align: center;
+    }
+
+    .mainSection .right-section h1{
+        font-size: 1.9rem;
+    }
+    .social a{
+        width: 3rem;
+    height: 3rem;
+    margin: 2rem 1rem 0 0;
+
+    }
+    footer{
+        margin-top: 12rem;
+    }
+    
+    .photo-container .phone-img{
+        width:120px;
+        height: 200px;
+        margin-top: 1rem;
+    }
+     .img-conta{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 4rem;
+    }
+    hr{
+        
+            margin-left: 0;
+
+
+    }
+    .prototype iframe{
+        width:230px;
+         height:580px;
+    }
+    .Problem-statment{
+        margin-left: 0;
+
+      
+    }
+    .Problem-statment h3{
+font-size: 1rem
+    }
+    .Problem-statment h2{
+        font-size: 1.9rem
+            }
+
+    .design-process-1 h2{
+        font-size: 3.5rem;
+
+    }
+    .design-process-1 h3{
+        font-size: 1.5rem;
+    }
+
+    .design-process-stage{
+        font-size: 1.7rem;
+      }
+    #quan-qal-research{
+        width: 100%;
+        margin: 0;
+        height: fit-content;
+      }
+
+      #quan-qal-research hr{
+        margin-left: 0;
+        width: 100%;
+
+      }
+      #wireframe-container{
+        height: fit-content;
+    }
+    .design-process-1{
+        height: 30vh;
+    }
+    .design-process-1 h2{
+        font-size: 2rem;
+    }
+    .design-process-1 h3{
+        font-size: 1rem;
+    }
+    #user-flow{
+        width: 300px;
+        height: 200px;
+    }
+    #test-container{
+       
+        height: fit-content;
+    }
+    #persona-container{
+        height: fit-content;
+    }
+    .latest-project-cont{
+        padding: 0px 0px;
+    }
+   .latest-project-cont h2{
+    padding-left: 2rem;
+   }
+   .button-top{
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    right: 30px;
+}
+.latest-project{
+    width: 380px;
+}
+
+}
+
+
+

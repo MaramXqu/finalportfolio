@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Eczar", serif;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    cursor: url("./Assets/mylogo-black.svg"),auto;
+}
+body {
+    background-color: #F3EFEE;
+
+}
+
+a:visited, a:link{
+    list-style: none;
+    color:#0a0a0a;
+}
+
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 1rem 5% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;   
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+#logo{
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar a{
+font-size: 1.5rem;
+text-decoration: none;
+font-weight: 700;
+margin-left: 5rem;
+}
+
+#check{
+    display: none;
+}
+
+.Menu-iphone{
+    position: absolute;
+    right: 5%;
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+    margin-bottom: 1.5rem;
+}
+
+.top-img{
+    position: relative;
+    direction: rtl;
+    padding: 0 5%;
+    height: 220px;
+    
+}
+#closicon{
+   display: none;
+} 
+
+.mainSection{
+    overflow: hidden;
+    padding-top: 80px;
+    display: flex;
+        justify-content:center;
+    align-items: center;
+    width: 100%;
+    
+    background-color: #F3EFEE;
+    height:95vh;
+    
+    
+}
+.mainSection .left-section ,.mainSection .right-section{
+    margin-right: 12rem;
+    text-align: center;
+}
+.mainSection .right-section{
+    animation:floatImage 4s ease-in-out infinite;
+}
+
+.mainSection .right-section h3{
+    font-size: 4rem;
+    font-family: "Dancing Script", cursive;
+}
+.mainSection .right-section h1{
+    font-size: 8rem;
+}
+
+.left-section img{
+    margin-top: 1rem;
+    width: 520px;
+    height: 710px;
+    cursor: url("./Assets/mylogo-wight.svg"),auto;
+}
+
+
+.secSection{
+    overflow: hidden;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    background-color:#72271E;
+    height:95vh;
+    cursor: url("./Assets/mylogo-wight.svg"),auto;
+    
+    
+}
+.secSection .left-section ,.secSection .right-section{
+    margin-right: 12rem;
+}
+.secSection .right-section{
+    width: 600px;
+    max-width: 100%;
+    padding: 0px 10px;
+    text-align: left;
+   
+    
+}
+
+.secSection .right-section h4{
+    font-size: 18px;
+    color: #e6e5e5;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+.secSection .right-section h1{
+    font-size: 60px;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+
+.secSection .right-section p{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+  
+
+.secSection .left-section img{
+    margin-top: 2rem;
+    margin-left: 6rem;
+    width: 600px;
+    height: 700px;
+    cursor: url("./Assets/mylogo-black.svg"),auto;
+}
+
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f0f0f;
+    color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 0 0;
+
+}
+.social-footer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 20%;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+.social a:hover{
+    background-color: #f8f8f7;
+    border-color: #f2f2f0;
+    box-shadow: 0 0 1rem #ededeb;
+    color: #0a0a0a;
+}
+.latest-project-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    height: 90vh;
+    background-color:#F5F2F0;
+}
+.latest-project{
+
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5rem;
+
+
+    
+}
+.latest-project-cont h2{
+    font-size: 3rem;
+    margin: -3rem 2rem;
+}
+.project-card{
+   flex: 1 1 21rem;
+   margin: 20px 20px;
+   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.2);
+   flex-wrap: wrap;
+   align-self: normal;
+   display: flex;
+   flex-direction: column;
+   padding: 20px 30px;
+
+}
+.project-card a:visited, .project-card a:link{
+    color:white;
+}
+.project-card img{
+    width: 100%;
+    height: 200px;
+}
+
+
+.project-card h4{
+    font-size: 28px;
+   margin: 15px 0;
+
+}
+.project-card p{
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+}
+.project-card button{
+    background-color: #72271E;
+    color: #ededeb;
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 15px;
+    margin-top: auto;
+
+}
+
+button{
+    background-color:#F5F2F0;
+    color: #72271E;
+    border-radius: 100px;
+    padding: 20px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: auto;
+    border: none;
+}
+
+
+button:hover {
+	border: none;
+    background-color:#72271E;
+    color: #e6e5e5;
+	opacity: 1;
+    border: 1px solid #e6e5e5;;
+}
+
+
+.btn:hover {
+	transition: 0.5s ease-in-out;
+    background-color:#72271E;
+    color: #e6e5e5;
+}
+
+
+@keyframes move {
+	from {
+		background-position: 0px;
+	}
+
+	to {
+		background-position: 1000px;
+	}
+}
+
+ 
+  
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 300px;
+      height: 300px;
+      opacity: 0;
+    }
+  }
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer p{
+    font-size: 1.6rem;
+    color: rgba(75, 74, 74, 0.715);
+}
+.secSection .right-section {
+    margin:1.6rem;
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+
+@media (min-width:768px)and (max-width:1024px){
+    .header{
+        padding: 1.3rem 5%;
+    
+
+    }
+    .mainSection{
+        
+        height: fit-content;
+        padding-top: 9rem;
+    
+    }
+    .mainSection .left-section{
+        margin-right: 0px;
+    }
+
+    .mainSection .left-section img{
+        width: 500px;
+        height: 620px;
+
+    }
+    .mainSection .right-section{
+        text-align: center;
+    }
+    .mainSection .right-section h3{
+        font-size: 3rem;
+        font-family: "Dancing Script", cursive;
+    }
+    .mainSection .right-section h1{
+        font-size: 6rem;
+    }
+    .social a{
+        margin: 2rem 1rem 0 0;
+    }
+    .secSection{
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        margin-top: -2rem;
+        flex-direction: column-reverse;
+        padding-top: 12rem;
+    }
+    .secSection .right-section {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+        width: 80%;
+
+    }
+    .secSection .left-section img{
+    margin-bottom: -1rem;
+
+        width: 620px;
+        height: 740px;
+
+    }
+    .secSection .left-section{
+        margin-right: 0;
+        margin-left: 0;
+        align-items: center;
+    }
+    .latest-project-cont{
+        padding: 10rem 2rem;
+        height: fit-content;
+        align-items: center;
+        
+    }
+    .latest-project{
+        flex-direction: column;
+    }
+    .project-card{
+        width: 500px;
+    }
+
+
+}
+
+@media (max-width:767px){
+    
+    .header{
+        width: 100%;
+
+    }
+    .Menu-iphone{
+        display: inline-flex;
+    }
+    #check:checked~.Menu-iphone #menuIcon {
+        display: none;
+    }
+
+    #check:checked~.Menu-iphone #closicon {
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(40px);
+        transition: .3s ease;
+        overflow: hidden;
+    }
+
+    #check:checked~.navbar {
+        height: 10.7rem;
+    }
+    .top-img{
+        display: none;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        color:#0a0a0a;
+    }
+    .mainSection{
+        
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-top: 15rem;
+        margin: 2rem 0;
+    
+        
+    }
+    .mainSection .left-section img{
+        width: 250px;
+        height: 350px;
+        margin-bottom: -1rem;
+
+    }
+    .secSection{
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        margin-top: -2rem;
+        flex-direction: column-reverse;
+        padding: 9.5rem 0;
+    }
+    .secSection .left-section img{
+        margin-bottom: -1rem;
+            width: 350px;
+            height: 400px;
+    
+        }
+        .secSection .left-section{
+            margin-right: 0;
+        }
+    .mainSection .left-section ,.mainSection .right-section{
+        margin-right: 0;
+    }
+    .mainSection .left-section img{
+        width: 300px;
+        height: 400px;
+
+    }
+    .mainSection .right-section{
+        text-align: center;
+    }
+    .mainSection .right-section h3{
+        font-size: 2rem;
+        font-family: "Dancing Script", cursive;
+    }
+    .mainSection .right-section h1{
+        font-size: 4rem;
+    }
+    .secSection .right-section h3{
+        font-size: 2rem;
+        font-family: "Dancing Script", cursive;
+    }
+    .secSection .right-section h1{
+        font-size: 4rem;
+    }
+    .secSection .right-section {
+        margin:1.6rem;
+        font-size: 1.2rem;
+        color: white;
+        text-align: center;
+    }
+    
+    
+    .social a{
+        width: 3rem;
+    height: 3rem;
+    margin: 2rem 1rem 0 0;
+
+    }
+    .project-card{
+        flex-direction: column;
+        width: 350px;
+    }
+    .latest-project{
+
+        display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+
+       
+    }
+    .latest-project-cont{
+    margin-top: -9.2rem;
+
+        padding-top: 8rem;
+        height: fit-content;
+        align-items: center;
+    }
+    .latest-project-cont h2{
+        font-size: 2.1rem;
+        margin-top: 2rem;
+        text-align: center;
+
+    }
+    footer{
+        margin-top: 12rem;
+    }
+
+}
