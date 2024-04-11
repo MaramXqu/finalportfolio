@@ -207,15 +207,13 @@ margin-left: 5rem;
     color: #0a0a0a;
 }
 
-
 .latest-project-cont{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 30px;
-    height: 100vh;
+    padding: 2rem 30px;
+    height: fit-content;
     background-color:#F5F2F0;
-   
 }
 .latest-project{
 
