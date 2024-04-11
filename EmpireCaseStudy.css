@@ -64,7 +64,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .button-top{
     display: none;
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     right: 20px;
     font-size: 20px;
     width: 50px;
@@ -150,6 +150,7 @@ hr{
 .design-process-1{
     background-color: #72271E;
     height:fit-content;
+    width: 100%;
     padding: 12rem 0;
     display: flex;
     flex-direction: column;
@@ -710,7 +711,7 @@ a:visited, a:link{
         padding-left:0;
     }
     .photo-container img{
-        width: 345px;
+        width: auto;
         height: 250px;
     }
     .mainSection .left-section ,.mainSection .right-section{
@@ -743,11 +744,12 @@ a:visited, a:link{
         height: 200px;
         margin-top: 1rem;
     }
+
      .img-conta{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 4rem;
+        padding: 4rem 0rem;
     }
     hr{
         
@@ -824,15 +826,21 @@ font-size: 1rem
    }
    .button-top{
     font-size: 18px;
-    width: 32px;
-    height: 32px;
-    right: 30px;
+    width: 36px;
+    height: 36px;
 }
 .latest-project{
     width: 380px;
 }
+#empire-moodboard{
+    width: 360px;
+}
 
 }
+
+
+
+
 
 
 
